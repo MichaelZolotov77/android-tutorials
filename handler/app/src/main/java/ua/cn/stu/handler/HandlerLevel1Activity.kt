@@ -60,7 +60,7 @@ class HandlerLevel1Activity : AppCompatActivity() {
                     handler.postDelayed({ nextRandomColor() }, DELAY)
 
                 R.id.randomColorTokenDelayedButton ->
-                    handler.postDelayed({ toggleTestButtonState()}, token, DELAY)
+                    handler.postDelayed({ nextRandomColor()}, token, DELAY)
                 R.id.showToastButton ->
                     handler.postDelayed({ showToast() }, token, DELAY)
                 R.id.cancelButton -> handler.removeCallbacksAndMessages(token)
